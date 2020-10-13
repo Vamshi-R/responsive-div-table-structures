@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel = "stylesheet" href = "responsive-table-div.css">-->
+    <style>
+        *{
+           box-sizing: border-box;
+        }
+        .table{
+               display:table;
+               width:100%;
+        }
+
+        .title{
+               display:table-caption;
+               color:red;
+               background-color: green;
+               text-align:center;
+               padding:6px;
+               margin-bottom:2px;
+               width:100%;
+               font-size:25px;
+               font-weight:bolder;
+               font-variant: small-caps;
+        }
+
+        .heading{
+                 display:table-row;
+                 text-align:justify;
+                 font-size:25px;
+                 background-color:lightgray;
+                 color:teal;
+        }
+
+        .row{
+             display:table-row;
+             background-color: lightblue;
+        }
+
+        .cell{
+              display:table-cell;
+              /*border:1px solid black;*/
+              padding:5px;
+        }
+        /*portrait mode*/
+        @media only screen and (min-device-width: 320px) and (max-device-width: 479px){
+       .title{
+              color:black;
+              background-color: antiquewhite;
+              font-weight: thicker;
+              font-style: italic;
+              text-shadow: 2px 2px;
+              margin:0
+        }
+
+        .heading{
+                 color:darkcyan;
+                 background-color:thistle;
+        }
+
+        #row1{
+              background-color: honeydew;
+        }
+
+        .cell{
+              font-weight: bold;
+        }
+
+    }
+/*Landscape mode*/
+@media only screen and (min-device-width: 480px) and (max-device-width: 1440px){
+    .title{
+        color:brown;
+        background-color: antiquewhite;
+        font-weight: bolder;
+        font-style: bold;
+        text-shadow: 5px 5px;
+        margin:0
+    }
+
+    .heading{
+        color:red;
+        background-color:lightgreen;
+    }
+
+    #row1{
+        background-color:lightgray;
+        color:black;
+    }
+
+    #row2{
+        background-color: lightskyblue;
+        color:honeydew;
+    }
+
+    .cell{
+        font-weight: bold;
+    }
+
+}   
+</style>
+</head>
+
+<body>
+    <div class = "table">
+        <div class = "title">
+            <p>CHART</p>
+        </div>
+
+        <div class = "heading">
+            <div class = "cell">
+                <p>#</p>
+            </div>
+
+            <div class = "cell">
+                <p>Name</p>
+            </div>
+
+            <div class = "cell">
+                <p>Company name</p>
+            </div>
+
+            <div class = "cell">
+                <p>Salary</p>
+            </div>
+        </div>
+
+        <div class = "row" id = "row1">
+            <div class = "cell">
+                <p>1</p>
+            </div>
+            <div class = "cell">
+                <p>VAMSHI</p>
+            </div>
+            <div class = "cell">
+                <p>SLV MART</p>
+            </div>
+            <div class = "cell">
+                <p>40000</p>
+            </div>
+        </div>
+
+        <div class = "row" id = "row2">
+            <div class = "cell">
+                <p>2</p>
+            </div>
+
+            <div class = "cell">
+                <p>TEJU</p>
+            </div>
+
+            <div class = "cell">
+                <p>MANTHAN</p>
+            </div>
+
+            <div class = "cell">
+                <p>35000</p>
+            </div>
+        </div>
+
+        <div class ="row" id = "row1">
+            <div class = "cell">
+                <p>3</p>
+            </div>
+
+            <div class = "cell">
+                <p>DHANUSH</p>
+            </div>
+
+            <div class = "cell">
+                <p>ORACLE</p>
+            </div>
+
+            <div class = "cell">
+                <p>40000</p>
+            </div>
+        </div>
+
+        <div class = "row" id = "row2">
+            <div class = "cell">
+                <p>4</p>
+            </div>
+
+            <div class = "cell">
+                <p>CHANDU</p>
+            </div>
+
+            <div class = "cell">
+                <p>INDECOMM</p>
+            </div>
+
+            <div class = "cell">
+                <p>45000</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
